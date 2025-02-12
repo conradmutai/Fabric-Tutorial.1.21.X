@@ -1,5 +1,7 @@
 package name.conrad.tutorialmod;
 
+import name.conrad.tutorialmod.block.ModBlocks;
+import name.conrad.tutorialmod.item.ModItemGroups;
 import name.conrad.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +15,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
