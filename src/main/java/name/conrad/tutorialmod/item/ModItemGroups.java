@@ -2,6 +2,7 @@ package name.conrad.tutorialmod.item;
 
 import name.conrad.tutorialmod.TutorialMod;
 import name.conrad.tutorialmod.block.ModBlocks;
+import name.conrad.tutorialmod.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -29,6 +30,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModItems.CHISEL);
                     })
                     .build());
 
